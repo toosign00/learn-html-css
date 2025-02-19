@@ -9,18 +9,6 @@
         background: linear-gradient(to right, #ffcccb, #ccffcc);
       }
     </style>
-    <script type="module">
-      // DOM 선택 부분
-      const showDialogButton = document.querySelector('.show-dialog');
-      const closeDialogButton = document.querySelector('.close-dialog');
-      const panelDialog = document.querySelector('.panel-dialog');
-      // 함수 구현 부분
-      const openDialog = () => panelDialog.showModal();
-      const closeDialog = () => panelDialog.close();
-      // 이벤트 바인딩 부분
-      showDialogButton.addEventListener('click', openDialog);
-      closeDialogButton.addEventListener('click', closeDialog);
-    </script>
   </head>
   <body>
     <h1>dialog 요소</h1>
@@ -49,5 +37,17 @@
     <div popover id="popoverContent">
       <p>팝오버 내용</p>
     </div>
+    <script>
+      // DOM 선택 부분
+      const showDialogButton = document.querySelector('.show-dialog');
+      const closeDialogButton = document.querySelector('.close-dialog');
+      const panelDialog = document.querySelector('.panel-dialog');
+      // 함수 구현 부분
+      const openDialog = () => panelDialog.showModal();
+      const closeDialog = () => panelDialog.close();
+      // 이벤트 바인딩 부분
+      showDialogButton.addEventListener('click', openDialog);
+      closeDialogButton.addEventListener('click', closeDialog);
+    </script>
   </body>
 </html>
