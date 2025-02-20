@@ -1,0 +1,61 @@
+body {
+  background-color: #ffc;
+}
+
+/* 태그 선택자 */
+p {
+  color: red;
+}
+
+/* 클래스 선택자 */
+.like {
+  color: green;
+}
+
+/* 아이디 선택자 */
+#lion {
+  color: blue;
+}
+
+/* 속성 선택자 */
+[title] {
+  color: purple;
+}
+
+a[href^="https://"] {
+  text-decoration: none;
+}
+
+a[href$="pdf"] {
+  background-color: violet;
+}
+
+/* 가상 클래스 선택자 */
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: olive;
+}
+
+a:hover {
+  color: blue;
+}
+
+a:active {
+  color: red;
+}
+
+a:active {
+  background-color: #fff;
+}
+
+/* 가상 요소 선택자 */
+h1::before {
+  content: "멋사 ";
+}
+h1::after {
+  content: " 13기";
+}
+
