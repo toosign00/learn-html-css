@@ -1,0 +1,74 @@
+@import '/src/common/mini-reset.css';
+
+:root {
+  /* 색상 */
+  --green: #22be61;
+  --silver: #929b90;
+  --brown: #e3a368;
+
+  /* 여백 */
+  --spacing-10: 0.625rem;
+  --spacing-20: 1.25rem;
+  --spacing-70: 4.375rem;
+
+  /* 글자 크기 */
+  --large: 1.125rem;
+  --medium: 0.875rem;
+  --small: 0.75rem;
+}
+
+body {
+  margin: 50px;
+  font-family: 'SUIT Variable', sans-serif;
+}
+
+h1 {
+  margin-bottom: 50px;
+}
+
+.notification {
+  --border-color: var(--silver);
+  --text-color: var(--silver);
+  --base-spacing: var(--spacing-20);
+  --large-spacing: var(--spacing-70);
+  --base-gap: var(--spacing-10);
+
+  position: relative;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background: no-repeat var(--base-spacing) 50%;
+  padding: var(--base-spacing) var(--base-spacing) var(--base-spacing)
+    var(--large-spacing);
+  margin-top: var(--base-gap);
+
+  .notification-subject {
+    font-size: var(--large);
+  }
+
+  .notification-time {
+    font-size: var(--small);
+    position: absolute;
+    top: var(--base-spacing);
+    right: var(--base-spacing);
+  }
+
+  .notification-content {
+    font-size: var(--medium);
+    margin-top: var(--base-gap);
+  }
+
+  &.green {
+    background-image: url(/src/assets/svg/pot-green.svg);
+    .notification-subject .notification-time {
+      
+      color: var(--green);
+    }
+  }
+
+  &.brown {
+    background-image: url(/src/assets/svg/bowl.svg);
+    .notification-subject .notification-time {
+      color: var(--brown);
+    }
+  }
+}
