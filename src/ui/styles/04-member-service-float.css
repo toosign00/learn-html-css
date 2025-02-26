@@ -1,0 +1,62 @@
+/* 스타일 초기화 */
+body * *::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'SUIT', sans-serif;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* 멤버 서비스 */
+.member-service {
+  background: yellow;
+  display: flow-root;
+
+  a {
+    /* background: lime; */
+    float: left;
+    text-transform: uppercase;
+  }
+
+  a:nth-child(n + 2)::before {
+    content: '|';
+    margin: 0 0.5em;
+  }
+}
+
+.member-link {
+  background-color: pink;
+  border:1px solid red;
+  display: flow-root;
+
+  li {
+    background: skyblue;
+    float: left;
+
+    span {
+      background: pink;
+      float: left;
+      margin:  0 0.5em;
+    }
+
+    a {
+      float: left;
+      background: orange;
+      text-transform: uppercase;
+    }
+  }
+}
