@@ -78,22 +78,25 @@
     <form action="/" class="form-search">
       <fieldset>
         <legend class="sr-only">검색 폼</legend>
-        <div class="input">
-          <label for="keyword" class="sr-only">검색어</label>
-          <input
-            type="search"
-            id="keyword"
-            name="keyword"
-            required
-            placeholder="검색어를 입력해주세요."
-          />
+        <div class="search-wrapper">
+          <div class="input">
+            <label for="keyword" class="sr-only">검색어</label>
+            <input
+              type="search"
+              id="keyword"
+              name="keyword"
+              required
+              placeholder="검색어를 입력해주세요."
+            />
+          </div>
+          <button type="submit" class="button-search button-circle">
+            <span class="sr-only">검색</span>
+          </button>
         </div>
-        <button type="submit" class="button-search button-circle">
-          <span class="sr-only">검색</span>
-        </button>
       </fieldset>
     </form>
 
+    <!-- 검색 바 -->
     <!-- 검색 바 -->
     <div class="searchbar">
       <div class="brand">
@@ -131,19 +134,21 @@
       <form action="/" class="form-search">
         <fieldset>
           <legend class="sr-only">검색 폼</legend>
-          <div class="input">
-            <label for="keyword" class="sr-only">검색어</label>
-            <input
-              type="search"
-              id="keyword"
-              name="keyword"
-              required
-              placeholder="검색어를 입력해주세요."
-            />
+          <div class="search-wrapper">
+            <div class="input">
+              <label for="keyword" class="sr-only">검색어</label>
+              <input
+                type="search"
+                id="keyword"
+                name="keyword"
+                required
+                placeholder="검색어를 입력해주세요."
+              />
+            </div>
+            <button type="submit" class="button-search button-circle">
+              <span class="sr-only">검색</span>
+            </button>
           </div>
-          <button type="submit" class="button-search button-circle">
-            <span class="sr-only">검색</span>
-          </button>
         </fieldset>
       </form>
     </div>
