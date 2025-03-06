@@ -1,5 +1,6 @@
 @import '/src/common/modern-reset.css';
 @import '/src/common/theme.css';
+@import "/src/common/base.css";
 
 body {
   margin-block-end: 1200px;
@@ -37,8 +38,8 @@ h1 {
   .team-header {
     display: block;
     padding: 1rem;
-    background-color: var(--pastel-blue);
-    color: #000;
+    background-color: var(--pastel-dark-blue);
+    color: #fff;
     font-weight: 600;
     font-size: 18px;
     z-index: 100;

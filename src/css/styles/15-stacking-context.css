@@ -1,6 +1,7 @@
 @import '/src/common/best-reset.css';
 @import '/src/common/theme.css';
 @import '/src/ui/components/avatar/avatar.css';
+@import "/src/common/base.css";
 
 body {
   margin: 50px;

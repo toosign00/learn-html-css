@@ -1,23 +1,18 @@
 @import '/src/common/modern-reset.css';
 @import '/src/common/theme.css';
+@import "/src/common/base.css";
 
-/* 헤더 */
-.header {
-  background: var(--pastel-coral);
-  height: 10vh;
-}
-
-/* 내비게이션 */
-.navigation {
-  background: var(--pastel-green);
-  height: 15vh;
-}
-
+/* 플렉스를 활용한 반응형 레이아웃 */
 /* 플렉스 컨테이너 */
 .container {
   @media (min-width: 768px) {
     display: flex;
     flex-flow: row wrap;
+
+    .box,
+    .wrapper {
+      display: contents;
+    }
 
     .header,
     .navigation,
@@ -40,29 +35,23 @@
     .sidebar {
       width: 25%;
       inline-size: 25%;
-      height: 80vh;
-      block-size: 80vh;
-    }
-
-    .content {
-      height: 80vh;
-      block-size: 80vh;
+      height: 65vh;
+      block-size: 65vh;
     }
   }
 }
 
-/* ========== div로 묶었을 때 ========== */
-/* .content-sidebar-container {
-  @media (min-width: 768px) {
-    display: flex;
+/* 헤더 */
+.header {
+  background: var(--pastel-coral);
+  height: 10vh;
+}
 
-    .content,
-    .sidebar {
-      flex: 1 0 0;
-      block-size: 65vh;
-    }
-  }
-} */
+/* 내비게이션 */
+.navigation {
+  background: var(--pastel-green);
+  height: 15vh;
+}
 
 /* 메인 콘텐츠 */
 .content {

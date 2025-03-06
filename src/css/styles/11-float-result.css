@@ -1,0 +1,55 @@
+@import "/src/common/modern-reset.css";
+@import "/src/common/theme.css";
+@import "/src/common/base.css";
+
+body{
+  margin: 100px;
+  font-family: SUIT, sans-serif;
+}
+
+/* Card (float) */
+.card{
+  padding: 20px;
+  background: none;
+  border: 1px solid var(--pastel-gray);
+  border-radius: 0.5em;
+
+
+  .subject{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--pastel-lavendar);
+
+    span{
+      vertical-align: top;
+
+      &[lang="en"]{
+        font-size: 0.5em;
+      }
+    }
+  }
+
+  .thumbnail{
+    background: none;
+    border: 1px solid var(--pastel-gray);
+    float: left;
+    border-radius: 50%;
+    shape-outside: circle(50%);
+    padding: 10px;
+    margin-right: 1em;
+
+    img{
+      border-radius: inherit;
+      width: 100px;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+      object-position: 0 -20px;
+    }
+  }
+
+  .content{
+    background: none;
+  }
+
+}

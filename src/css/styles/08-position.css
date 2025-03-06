@@ -1,14 +1,15 @@
-@import '/src/common/mini-reset.css';
+@import "/src/common/mini-reset.css";
+@import "/src/common/base.css";
 
-body {
+body{
   margin: 50px;
 }
 
-.lion {
+.lion{
   border: 1px solid black;
   background-color: black;
 
-  .like {
+  .like{
     border: 1px solid red;
     background-color: yellow;
     position: relative;
@@ -18,19 +19,19 @@ body {
   }
 }
 
-h6 {
-  background-color: pink;
-}
-
-.box {
+.box{
   position: relative;
   border: 1px solid blue;
   height: 100px;
 }
 
-.bootcamp {
-  background-color: skyblue;
+.bootcamp{
+  background-color: aqua;
   position: absolute;
-  top: 50px;
   right: 50px;
+  bottom: 50px;
+}
+
+h6{
+  background-color: pink;
 }

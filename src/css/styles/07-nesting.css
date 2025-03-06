@@ -1,18 +1,21 @@
-.likelion {
-  .likelion__list {
-    list-style-type: none;
+@import "/src/common/base.css";
+
+.likelion{
+  
+  .likelion__list{
+    list-style: none;
+ 
+    &:hover{
+      background-color: pink;
+    }
   }
 
-  &:hover {
-    background-color: yellow;
-  }
-
-  .likelion__item {
+  .likelion__item{
     color: green;
+
   }
 
-  .likelion__link {
-    text-decoration: none;
+  .likelion__link{
     color: inherit;
   }
 }

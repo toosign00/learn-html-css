@@ -1,61 +1,74 @@
+@import "/src/common/base.css";
+
 /* 스타일 초기화 */
-body * *::before,
-*::after {
+body *, body *::before, body *::after {
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'SUIT', sans-serif;
-  margin: 10px;
-}
-
-a {
+a{
   text-decoration: none;
   color: inherit;
 }
 
-ul,
-li {
+ul, li{
   list-style: none;
-  margin-left: 0;
   padding-left: 0;
 }
 
+
+body{
+  font-family: "SUIT", sans-serif;
+}
+
 /* 멤버 서비스 */
-.member-service {
+.member-service{
   background: yellow;
   display: flow-root;
 
-  a {
+  a{
     /* background: lime; */
     float: left;
     text-transform: uppercase;
   }
 
-  a:nth-child(n + 2)::before {
-    content: '|';
+  a:nth-child(n+2)::before{
+    content:"|";
     margin: 0 0.5em;
+  }
+
+  &::after{
+    display: block;
+    content: "";
+    clear: both;
   }
 }
 
-.member-link {
-  background-color: pink;
+hr{
+  clear: both;
+}
+
+
+
+/* 멤버 링크 */
+.member-link{
+  margin-top: 100px;
+  clear: both;
   border:1px solid red;
   display: flow-root;
 
-  li {
+  li{
     background: skyblue;
     float: left;
 
-    span {
+    span{
       background: pink;
       float: left;
-      margin:  0 0.5em;
+      margin: 0 0.5em;
     }
 
-    a {
-      float: left;
+    a{
       background: orange;
+      float:left;
       text-transform: uppercase;
     }
   }

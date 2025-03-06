@@ -1,4 +1,6 @@
-body {
+@import "/src/common/base.css";
+
+body{
   /* 배경 색상 */
   background-color: hsl(180, 50%, 80%);
   /* 배경 이미지 */
@@ -15,9 +17,9 @@ body {
   /* 배경 이미지 크기 */
   background-size: 100px 130px;
   /* 단축 표기번으로 줄여서 선언 */
-  background:
+  background: pink,
     url(/src/assets/images/cloud.png) no-repeat 0 100px fixed,
     url(/src/assets/images/sun.png) no-repeat 150px 50px /150px 150px fixed,
-    linear-gradient(red, green),
-    pink;
+    linear-gradient(red, green)
+    ;
 }

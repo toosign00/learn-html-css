@@ -1,14 +1,30 @@
 @import '/src/common/modern-reset.css';
 @import '/src/common/theme.css';
-@import '/src/ui/components/avatar/avatar.css';
+@import "/src/ui/components/avatar/avatar.css";
+@import "/src/common/base.css";
 
-.img-avatar,
-.state {
+body{
+  margin: 20px;
+}
+
+h1{
+  margin-block: 20px;
+}
+
+.img-avatar, .state{
   position: initial !important;
 }
 
-
 /* 그리드 활용 */
+.grid-box{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  border: 1px solid gray;
+  padding: 2rem;
+  place-items: center;
+}
+
 .img-avatar{
   display: grid;
   

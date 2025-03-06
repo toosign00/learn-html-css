@@ -1,3 +1,5 @@
+@import "/src/common/base.css";
+
 .case-01 {
   writing-mode: vertical-lr;
   border: 1px solid currentColor;

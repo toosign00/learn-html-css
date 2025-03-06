@@ -1,41 +1,42 @@
-@import '/src/common/mini-reset.css';
+@import "/src/common/mini-reset.css";
+@import "/src/common/base.css";
 
-:root {
+:root{
   /* 색상 */
-  --green: #22be61;
-  --silver: #929b90;
-  --brown: #e3a368;
+  --green: #22BE61;
+  --silver: #929B90;
+  --brown: #E3A368; 
 
   /* 여백 */
-  --spacing-10: 0.625rem;
+  --spacing-10: .625rem;
   --spacing-20: 1.25rem;
   --spacing-70: 4.375rem;
 
   /* 글자 크기 */
   --large: 1.125rem;
-  --medium: 0.875rem;
-  --small: 0.75rem;
+  --medium: .875rem;
+  --small: .75rem;
 }
 
-body {
+body{
   margin: 50px;
 }
 
-h1 {
+h1{
   margin-bottom: 50px;
 }
 
 /* 알림 컨테이너 */
 /* 플렉스는 아직 배우지 않았습니다. */
 /* 컴포넌트를 만들고 배치를 위해 만든 컨테이네어 갭을 주는 방향으로 컴포넌트 간 여백을 주셔야 합니다. */
-.container {
+.container{
   display: flex;
   flex-flow: column nowrap;
   gap: var(--spacing-20);
 }
 
 /* 토스트 UI */
-.toast {
+.toast{
   --border-color: var(--silver);
   --text-color: var(--silver);
   --gap: var(--spacing-10);
@@ -46,43 +47,37 @@ h1 {
   border: 1px solid var(--border-color);
   border-radius: 0.5rem;
   background: no-repeat var(--base-spacing) 50%;
-  padding: var(--base-spacing) var(--base-spacing) var(--base-spacing)
-    var(--large-spacing);
+  padding: var(--base-spacing) var(--base-spacing) var(--base-spacing) var(--large-spacing);
   margin-top: var(--base-gap);
-
-  h2,
-  strong {
+  
+  h2, strong{
     font-size: var(--large);
   }
 
-  time {
+  time{
     font-size: var(--small);
     position: absolute;
     top: var(--base-spacing);
     right: var(--base-spacing);
   }
 
-  p {
+  p{
     font-size: var(--medium);
     margin-top: var(--gap);
   }
 
-  &.plant-care {
+  &.plant-care{
     background-image: url(/src/assets/svg/pot.svg);
-
-    h2,
-    strong,
-    time {
+    
+    h2, strong, time{
       color: var(--green);
     }
   }
 
   &.mealtime {
     background-image: url(/src/assets/svg/rice.svg);
-
-    h2,
-    strong,
-    time {
+    
+    h2, strong, time{
       color: var(--brown);
     }
   }

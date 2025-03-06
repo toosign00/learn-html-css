@@ -1,20 +1,21 @@
-@import '/src/common/best-reset.css';
-@import '/src/common/theme.css';
+@import "/src/common/best-reset.css";
+@import "/src/common/theme.css";
+@import "/src/common/base.css";
 
 /* 반응형 레이아웃 */
 /* 헤더 */
-.header {
+.header{
   background: var(--pastel-coral);
   height: 10vh;
 }
 
 /* 내비게이션, 메인 콘텐츠, 사이드바 컨테이너 */
-.nav-main-aside-wrapper {
+.nav-main-aside-wrapper{
   display: flow-root;
 }
 
 /* 내비게이션 */
-.navigation {
+.navigation{
   background: var(--pastel-green);
   height: 15vh;
 
@@ -26,14 +27,14 @@
 }
 
 /* 메인 콘텐츠 및 사이드바 컨테이너 */
-.content-wrapper {
+.content-wrapper{
   @media (min-width: 768px) {
     display: flow-root;
   }
 }
 
 /* 메인 콘텐츠 */
-.content {
+.content{
   background: var(--pastel-aqua);
   height: 40vh;
 
@@ -50,7 +51,7 @@
 }
 
 /* 사이드 바 */
-.sidebar {
+.sidebar{
   background: var(--pastel-yellow);
   height: 25vh;
 
@@ -67,7 +68,8 @@
 }
 
 /* 푸터 */
-.footer {
+.footer{
   background: var(--pastel-lavender);
   height: 10vh;
 }
+  

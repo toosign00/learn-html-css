@@ -4,15 +4,15 @@
 @import '/src/common/base.css';
 
 /* 텍스트 링크 */
-.text-link {
+.text-link{
   display: inline-flex;
   font-size: var(--font-md);
 
-  &:hover {
+  &:hover{
     background: var(--blue-100);
   }
 
-  &:focus {
+  &:focus{
     outline: 0;
     box-shadow: 0 0 0 1px var(--blue-900);
     border-radius: var(--rounded-xs);

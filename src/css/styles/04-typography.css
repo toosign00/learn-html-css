@@ -1,7 +1,9 @@
+@import "/src/common/base.css";
+
 /* font-family 속성 - 글꼴 */
 /* 루트 요소 */
-:root {
-  font-size: clamp(12px, 3vw, 24px);
+:root{
+  font-size:clamp(12px,3vw,24px);
 }
 
 body {
@@ -10,23 +12,23 @@ body {
   font-size: 1.25rem;
 }
 
-h1 {
+h1{
   font-weight: 500;
   font-size: 1.5em;
 }
 
-div {
+div{
   font-size: 1.5em;
 }
 
 /* font 관련 속성 - 글자 크기, 굵기, 기울임꼴 */
-.size {
+.size{
   color: green;
   line-height: 1;
   font-weight: 300;
   font-style: italic;
   font-variant: small-caps;
-  font-family: 'pretendard variable', sans-serif;
+  font-family: "pretendard variable", sans-serif;
   /* font:14px "pretendard variable"; */
 }
 

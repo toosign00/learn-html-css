@@ -4,7 +4,7 @@
 @import '/src/common/base.css';
 
 /* 체크박스 (배경이미지) */
-.checkbox {
+.checkbox{
   --size: 1.5rem;
 
   display: inline-flex;
@@ -14,7 +14,7 @@
   font-size: var(--font-md);
 
   /* .checkbox 컨테이너 안에 자식 요소 중 .bg-img 클래스가 있을 경우 input 요소를 선택 */
-  &:has(.bg-img) input {
+  &:has(.bg-img) input{
     position: absolute;
     top: 0;
     inset-block-start: 0;
@@ -28,13 +28,13 @@
     appearance: none;
   }
 
-  /* input:focus {
+  /* input:focus{
     outline: 0;
-    box-shadow: 0 0 0 1px var(--blue-900);
+    box-shadow: 0 0 0 1px var(--red-500);
     border-radius: var(--rounded-xs);
   } */
 
-  label.bg-img {
+  label.bg-img{
     background: url(/src/assets/naver/unchecked.svg) no-repeat;
     padding-left: 1.875rem;
     padding-inline-start: 1.875rem;
@@ -42,19 +42,19 @@
     align-content: center;
   }
 
-  input:checked + label.bg-img {
-    background-image: url(/src/assets/naver/checked.svg);
+  input:checked + label.bg-img{
+    background-image: url(/src/assets/naver/checked.svg) ;
   }
 }
 
 /* 체크박스 (svg 요소) */
-.checkbox.svg {
+.checkbox.svg{
   display: inline-flex;
   align-items: center;
-  column-gap: 0.375rem;
+  column-gap: .375rem;
   position: relative;
 
-  input {
+  input{
     position: absolute;
     top: 0;
     inset-block-start: 0;
@@ -68,16 +68,16 @@
     appearance: none;
   }
 
-  label {
+  label{
     display: contents;
   }
 
   input:checked + label .svg--area,
-  input:checked + label .svg--border {
+  input:checked + label .svg--border{
     fill: var(--green-500);
   }
 
-  input:checked + label .svg--mark {
+  input:checked + label .svg--mark{
     fill: var(--white);
   }
 }

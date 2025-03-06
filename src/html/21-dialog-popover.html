@@ -9,45 +9,41 @@
         background: linear-gradient(to right, #ffcccb, #ccffcc);
       }
     </style>
-  </head>
-  <body>
-    <h1>dialog 요소</h1>
-    <div class="dialog-area">
-      <button type="button" class="show-dialog">모달창 보기</button>
-      <dialog class="panel-dialog" aria-labelledby="event">
-        <h2 id="event">깜짝 혜택</h2>
-        <p>
-          미안하다, 아마나이. 난 지금 널 위해 화를 내는게 아니야. 나는 아무도
-          미워하지 않아. 지금은 그저 한없이 이 세계가 유쾌하다. [천상천하,
-          유아독존!] 대대로 전해 내려오는 전수 술식의 이점은 선대가 미리
-          구축해놓은 술식의 취급설명서가 있다는 것. 단점은 술식의 정보가 쉽게
-          새어나간다는 것. 당신, 젠인 가의 사람이지? 그러니 '창'과 '혁' 그리고
-          무하한 주술에 대한 것도 잘 아는 거겠지. 하지만 이건, 고죠 가문
-          안에사도 극히 일부의 인간만 아는 것이다. 순전과 반전. 각각의 무한을
-          충돌시킴으로써 생성되고, 가상의 질량을 밀어내는 허식(虚式), 자(紫);
-          🫸🔵 🔴🫷 🫴🟣
-        </p>
-        <button type="button" class="close-dialog">닫기</button>
-      </dialog>
-    </div>
-    <h1>popover 속성</h1>
-    <button type="button" popovertarget="popoverContent" class="button-popover">
-      팝오버 보기
-    </button>
-    <div popover id="popoverContent">
-      <p>팝오버 내용</p>
-    </div>
-    <script>
+    <script type="module">
       // DOM 선택 부분
       const showDialogButton = document.querySelector('.show-dialog');
       const closeDialogButton = document.querySelector('.close-dialog');
       const panelDialog = document.querySelector('.panel-dialog');
+
       // 함수 구현 부분
       const openDialog = () => panelDialog.showModal();
       const closeDialog = () => panelDialog.close();
+
       // 이벤트 바인딩 부분
       showDialogButton.addEventListener('click', openDialog);
       closeDialogButton.addEventListener('click', closeDialog);
     </script>
+  </head>
+  <body>
+    <!-- dialog 요소 -->
+    <div class="dialog-area">
+      <button type="button" class="show-dialog">혜택 보기</button>
+
+      <dialog class="panel-dialog" aria-labelledby="surprise-benefits">
+        <h2 id="surprise-benefits">깜짝 혜택</h2>
+        <p>쉿! 고객님만을 위한 깜짝 할인 쿠폰 <br /> 어제 빠뜨린 상품도 할인받고 내일 만나요!</p>
+        <a href="/">쿠폰 확인하기</a>
+        <button type="button" class="dismiss-today">오늘 하루 안보기</button>
+        <button type="button" class="close-dialog">닫기</button>
+      </dialog>
+    </div>
+
+    <!-- popover 속성 -->
+    <button type="button" popovertarget="popoverContent" class="button-popover">
+      팝오버 보기
+    </button>
+    <div popover id="popoverContent">
+      <p>팝오버는 툴팁과 비슷한 UI 요소로, 추가적인 정보를 제공하거나 사용자와 상호작용할 수 있는 작은 창을 표시할 때 유용하다.</p>
+    </div>
   </body>
 </html>
