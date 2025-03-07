@@ -1,5 +1,6 @@
 @import '/src/common/modern-reset.css';
 @import '/src/common/base.css';
+@import "/src/common/animation.css";
 
 body{
   background-color: #778899;
@@ -50,6 +51,8 @@ h1 {
       &::before {
         content: "💜";
         margin-inline-end: 0.5rem;
+        animation: pulse 0.5s infinite ease-in-out;
+        animation-play-state: running;
       }
     }
 
